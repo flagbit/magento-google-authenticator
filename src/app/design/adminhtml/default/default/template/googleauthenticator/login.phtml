@@ -1,0 +1,5 @@
+    <script type="text/javascript">
+		Event.observe(window, 'load', function() {
+	       $$('#loginForm div.login-form div.clear').first().insert( { after: '<div class="input-box input-right"><label for="verificationcode"><?php echo Mage::helper('flagbit_googleauthenticator')->__('Verification code:') ?></label><br/><input type="text" id="verificationcode" name="login[verificationcode]" value="" class="input-text" /></div><div class="clear"></div>' } );
+		});    
+    </script>
